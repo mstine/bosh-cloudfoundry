@@ -48,7 +48,7 @@ This will prompt you for your AWS credentials and then automatically do everythi
 You can now ssh into your inception server:
 
 ```
-$ inception ssh
+$ bundle exec bin/inception ssh
 > ubuntu user
 ```
 
