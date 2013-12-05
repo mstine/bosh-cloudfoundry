@@ -39,6 +39,10 @@ vagrant box add cf-workshop <<URL TO WORKSHOP BOX>>
 vagrant init cf-workshop
 vagrant up
 vagrant ssh
+
+git config --global user.name "<<YOUR NAME>>"
+git config --global user.email <<YOUR EMAIL>>
+
 cd inception-server
 bundle exec bin/inception deploy
 ```
