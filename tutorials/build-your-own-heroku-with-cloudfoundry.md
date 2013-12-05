@@ -32,7 +32,18 @@ In us-east-1 and us-west-2 ([the two cheapest regions](http://aws.amazon.com/ec2
 
 ## Create inception server
 
-If you have a slow local internet (say at home or a conference/workshop) OR if you are deploying to any other region than us-east-1, you should create an inception server.
+If you are going to run from the workshop VM, you'll need to have installed [VirtualBox](https://www.virtualbox.org/wiki/Downloads) and [Vagrant](http://downloads.vagrantup.com/). Once that's done, execute the following steps:
+
+```
+vagrant box add cf-workshop <<URL TO WORKSHOP BOX>>
+vagrant init cf-workshop
+vagrant up
+vagrant ssh
+cd inception-server
+bundle exec bin/inception deploy
+```
+
+If you're going to run with your own local Ruby and Git install, do this instead:
 
 ```
 git clone https://github.com/cloudfoundry-community/inception-server.git
