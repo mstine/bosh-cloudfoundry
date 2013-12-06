@@ -182,11 +182,12 @@ $ bosh deploy
 
 ```
 $ bosh show cf attributes
+Common password: 6d7fe84f828b
 
 $ gem install cf
 $ cf target http://api.1.2.3.4.xip.io
-Common password: 6d7fe84f828b
-$ cf login admin
+$ cf login 
+Email> admin
 Password> 6d7fe84f828b
 
 $ cf create-org me
